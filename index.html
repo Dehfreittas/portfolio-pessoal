@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Nelson André</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho e menu de navegação -->
+    <header>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+            <button id="tema">Tema</button>
+        </nav>
+    </header>
+     <!-- Seção de apresentação pessoal -->
+    <section id="sobre">
+        <div id="textoSobre">
+        <h1>Sobre Mim</h1>
+       
+        <p>Olá! Meu nome é Nelson André e este é o meu Portfólio</p>
+        <p>Sou estudante de Análise e Desenvolvimento de Sistemas e atualmente estou ampliando meus conhecimentos em desenvolvimento web, mobile e qualidade de software (QA). </p>
+        <p>Tenho grande interesse por tecnologia, automação e criação de soluções digitais. Gosto de aprender na prática, testar novas ideias e transformar conhecimento em projetos que contribuam para o meu desenvolvimento profissional. </p>
+        
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Estudar tecnologia e novas ferramentas</li>
+            <li>Assistir conteúdos relacionados à área de tecnologia</li>
+            <li>Desenvolver projetos para praticar conhecimentos</li>
+            <li>Ler e buscar aprendizado contínuo</li>
+            <li>Pescaria como momento de lazer e equilíbrio</li>
+        </ul>
+        </div>
+        <!-- Foto de perfil -->
+        <img src="foto.jpeg" id="fotoPerfil" alt="Foto de Nelson André">
+    </section>
+    <section id="formacao">
+        <h1>Formação</h1>
+        <div class="cards">
+         <!-- Formação superior -->   
+        <div class="card">
+        <h2>Faculdade</h2>
+        <p>Curso Superior em Análise e Desenvolvimento de Sistemas - UNINTER </p>
+        <p>Formação em andamento com foco em desenvolvimento de software e tecnologia</p>
+        </div>
+        <!-- Cursos complementares --> 
+        <div class="card">
+        <h2>Cursos Extracurriculares</h2>
+        <p>Guardião da Qualidade - Formação prática em Qualidade de Software</p>
+        <p>Jira - Gestão e acompanhamento de projetos e testes</p>
+        <p>Comunidade Impressionadora - Desenvolvimento de habilidades técnicas e produtividade</p>
+        </div >
+         <!-- Idiomas -->
+        <div class="card">
+        <h2>Idiomas</h2>
+        <p>Inglês - Intermediário</p>
+        <p>Desenvolvimento contínuo com foco em leitura técnica e tecnologia</p>
+        </div>
+        </div>
+    </section>
+    <!-- Seção de projetos e experiências -->
+    <section id="portfolio">
+        <h1>Portfólio</h1>
+        <div class="cards">
+        <!-- Projeto acadêmico -->    
+        <div class="card">
+            <h2>Projeto Acadêmico</h2>
+        <p>Desenvolvimento de um portfólio pessoal utilizando HTML, CSS e JavaScript com foco em estruturação, responsividade e interação com o usuário.</p>
+        <a href="https://github.com/Dehfreittas/portfolio-pessoal" target="_blank" rel="noopener">Ver projeto</a>
+        </div>
+        <!-- Estudos em QA -->
+        <div class="card">
+            <h2>Estudos em QA</h2>
+        <p>Práticas voltadas para testes manuais e automação com foco em qualidade de software e validação de aplicações web.</p>
+        <a href="https://github.com/Dehfreittas/primeiros-passos-cypress" target="_blank"rel="noopener">Em evolução</a>
+        </div>
+        <!-- Espaço para projetos futuros -->
+        <div class="card">
+            <h2>Projetos Futuros</h2>
+        <p>Espaço destinado para inclusão de novos projetos relacionados ao desenvolvimento e qualidade de software</p>
+        <a href="https://github.com/Dehfreittas" target="_blank"rel="noopener">Ver repositório</a>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- Formulário de contato -->
+    <section id="contato">
+        <h1>Contato</h1>
+        <p>Se desejar entrar em contato, envie uma mensagem pelo formulário abaixo.</p>
+     <!-- Formulário com validação via JavaScript -->
+    <form id="formContato">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" placeholder="Seu nome">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Digite seu email">
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+    <button type="submit">Enviar</button>
+    </form>
+    </section>
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
