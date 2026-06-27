@@ -1,0 +1,331 @@
+/* Configurações gerais da página */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: 
+    background-color 0.4s,
+    color 0.4s;
+
+}
+/* Cabeçalho e menu de navegação */
+header{
+    background-color: #1f2937;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+
+}
+nav a:hover{
+    color:#22c55e;
+
+}
+/* Estrutura principal das seções */
+section{
+    min-height: 100vh;
+    padding:140px 60px;
+
+}
+h1{
+    margin-bottom: 20px;
+}
+/* Seção Sobre Mim */
+#sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+#textoSobre{
+    max-width: 700px;
+}
+#fotoPerfil{
+    width: 280px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+#fotoPerfil:hover{
+    transform:
+    translateY(-5px);
+}
+#sobre h1{
+    font-size: 48px;
+    
+}
+
+#sobre p{
+    margin-top: 20px;
+    line-height: 1.8;
+    max-width: 760px;
+
+}
+#sobre h3{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+#sobre ul{
+    margin-top: 20px;
+    margin-left: 0px;
+    list-style-position: inside;
+}
+/* Seção Formação */
+#formacao{
+    background: #f5f5f5;
+
+}
+/* Estrutura dos cards */
+.cards{
+    display: flex;
+    gap: 30px;  
+    margin-top: 40px;   
+    flex-wrap: wrap;
+}
+.card{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;    
+    width: 300px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+
+    transition: 
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+.card h2{
+    margin-bottom: 15px;
+    
+}
+.card p{
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+/* Seção Portfólio */
+#portfolio{
+    background:inherit;
+}
+
+#portfolio .card{
+    min-height: 240px;
+}
+
+#portfolio a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+#portfolio a:hover{
+    transform: scale(1.05);
+}
+/* Seção Contato e formulário */
+#contato{
+    background:inherit;
+}
+#formContato{
+    max-width: 600px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input,textarea{
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color: #22c55e;
+    }
+
+textarea{
+    height: 180px;
+    resize: none;
+}
+button{
+    padding: 15px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover{
+    transform:
+    translateY(-2px);
+    opacity: 0.95;
+}
+#tema{
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 
+    transform 0.3s,
+    background-color 0.3s;
+}
+/* Configuração do tema escuro */
+.dark{
+
+    background:#111827;
+
+    color:white;
+
+}
+.dark header{
+
+    background:#000;
+
+}
+.dark section{
+
+    background:#111827;
+
+}
+.dark nav a{
+
+    color:white;
+
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark li,
+.dark label{
+
+    color:white;
+
+}
+.dark .card{
+
+    background:#1f2937;
+    transition: 
+    background 0.4s,
+    transform 0.3s,
+    box-shadow 0.3s;
+
+}
+.dark input,
+.dark textarea{
+
+    background:#374151;
+
+    color:white;
+
+    border:1px solid #666;
+
+}
+.dark #tema,
+.dark #formContato button{
+    background: #22c55e;
+
+}
+.dark #formacao,
+.dark #portfolio,
+.dark #contato{
+
+background:#111827 !important;
+
+}
+.dark #portfolio h1,
+.dark #contato h1{
+
+color:white !important;
+
+}
+.dark #portfolio p,
+.dark #contato p,
+.dark #contato label{
+
+color:#e5e7eb !important;
+
+}
+/* Responsividade para dispositivos móveis */
+@media(max-width:768px){
+    nav{
+       flex-wrap: wrap;
+       justify-content: center;
+        gap: 20px;
+    }
+
+section{
+    padding: 180px 30px;
+
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#sobre{
+    flex-direction: column;
+    text-align: center;
+}
+#fotoPerfil{
+    width: 220px;
+}
+#sobre ul{
+    margin-top: 20px;
+    margin-left: 0;
+    list-style-position: inside;
+}
+#sobre h1{
+    font-size: 34px;
+
+}
+#formContato{
+    width: 100%;
+}
+input,
+textarea{
+    width: 100%;
+}
+#formContato button{
+    width: 100%;
+}
+
+#tema{
+    width: auto;
+    font-size: 14px;
+    transition: 0.3s;
+}
+#tema:hover{
+    transform: scale(1.05);
+}
+}
